@@ -17,7 +17,8 @@ function appendToDOM(response){
 
 
     else {
-        $("body").append("<p>No webcam detected. Too Bad</p>");
+        $("body").append("<p>No webcam detected. Too Bad</p>" +
+          "<p>" + JSON.stringify(thing) + "</p>");
     }
   });
 }
